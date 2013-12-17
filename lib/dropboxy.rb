@@ -5,7 +5,7 @@ module Dropboxy
   @config = {}
   
   def self.get_dropbox_file(file_path)
-    content = @client.fetch_file(file_path)
+    content = @client.get_file(file_path)
     template = Dropboxable::Template.new(content)
     template.to_s
   end
