@@ -1,6 +1,13 @@
 # Dropboxy
 
-TODO: Write a gem description
+The base of a Dropbox based CMS for Ruby on Rails.
+
+It is very basic in essence and in purpose, it:
+
+- Fetches files from Dropbox written in Textile format.
+- Parses and converts them to HTML.
+- Use converted HTML as your web pages content.
+- Profit.
 
 ## Installation
 
@@ -18,7 +25,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You must have generated a Dropbox Access Token for your App. [More details here.](https://www.dropbox.com/developers/core/start/ruby)
+
+Having your Access Token you create the default initializer file running:
+
+```ruby
+rails g dropboxy
+```
+
+And placing your Access Token in **/config/initializers/dropboxy.rb**
 
 ## Contributing
 
