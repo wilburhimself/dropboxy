@@ -1,6 +1,5 @@
 require 'spec_helper'
 describe Dropboxable do
-
   subject(:dropboxy_client) {
     token = YAML.load_file('spec/support/dropboxy_token.yml')
     Dropboxable::Client.new(token['dropbox_access_token'])
